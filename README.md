@@ -28,3 +28,5 @@ Q6 ข้อดีของ model mvc คือเมื่อเราแยก
 Q7 
 
 <img src='/Resource/Q7.jpeg'>
+
+Q8 เพื่อทำการลด Dependency ระหว่าง Object และทำ Polymorphism
