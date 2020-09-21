@@ -11,7 +11,7 @@
 
 Q1 เราต้อง concern เรื่องการ code แต่ละส่วนควรทำงานแยกกัน เช่น layer view ก้ควรมีแค่ code ที่ทำงานแค่ view ของโปรแกรม ส่วน controller ก็ควรจะทำงานเพียงแค่ในส่วนของ controller โดยแต่ละอันจะเรียกผ่าน function หรือ interface ของกันและกัน
 
-Q2 
+Q2 ไม่ได้ เพราะไม่มีตัวช่วยในการคุมการแสดง presentation layer ถ้าเกิด business logic เปลี่ยนก็จะทำให้ข้อมูลใน persentation layer เปลี่ยนไปเลย ดังนั้นเราควรเติมตัว controller เพิ่มช่วยในการควบคุม การทำงานของ presentation
 
 Q3 เติมโค้ดส่วนนี้เข้าไปเพื่อให้ครบ layer
 <br />
