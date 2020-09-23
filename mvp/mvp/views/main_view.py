@@ -58,4 +58,4 @@ class MainView(MainContract.View):
         # Add note
         # Your code here
         if self.presenter:
-            self.presenter.add_not(content)
+            self.presenter.add_note(content)
