@@ -31,8 +31,6 @@ Q7
 
 Q8 เพื่อทำการลด Dependency ระหว่าง Object และทำ Polymorphism
 
-<img src='/Resource/Q7.jpeg'>
-
 Q9 Presenter จะทำหน้าที่รับ Event ที่ได้มาจาก View ได้แก่ Add Note, Get All Note และ Clear Note แล้วอัพเดท View และ Model
 
 Q10 MainController เป็นแค่ Interface ที่เอาไว้บอกว่า Presenter จะมีฟังก์ชันใดที่ต้อง Implement บ้าง ส่วน Method ใน MainPresenter จะเป็น Method ที่ Implement จาก Interface เรียบร้อยแล้ว และจะใช้เป็นสื่อกลางในการอัพเดท View และ Model
@@ -41,6 +39,34 @@ Q11 View มีปฏิสัมพันธ์กับ Presenter โดยก
 
 Q12 
 
+<img src='/Resource/Q12.jpg'>
+
 Q13 เทียบกับ MVC แล้ว MVP จะแบ่งแยก Model กับ View ได้อย่างชัดเจนมากกว่า แต่ข้อเสียเมื่อเทียบกับ MVC คือ จำนวนโค้ดที่เขียนจะมีมากกว่า เพราะต้องเขียนรองรับทุกการกระทำที่เกิดจาก View และยังต้องเขียน Code รองรับการกระทำที่เกิดขึ้นเพื่อส่งข้อมูลกลับไปแสดงยัง View อีกรอบด้วย
 
 Q14 Testable มากขึ้น เพราะมี Dependencies ที่เป็น Abstract
+
+Q15 It is a programming paradigm concerned with data streams and the propagation of change.
+
+Q16 The observer pattern is a software design pattern in which an object, called the subject, maintains a list of its dependents, called observers, and notifies them automatically of any state changes, usually by calling one of their methods.
+
+Q17 Not necessary, as the view is the only component required to acknowledge data change
+
+Q18 Using BehaviorSubject, which can reference the value in real time and observed by the observer.
+
+Q19 self.note_behavior_subject.on_next(self.note_repository.get_all_notes())
+
+Q20 ViewModel detects change in View, then process accordingly, and vice versa.
+
+Q21 The Presenter must update itself, while the ViewModel does not.
+
+Q22 ViewModel, as reference is not necessary.
+
+Q23 By calling the ViewModel method with input parameter.
+
+Q24
+
+<img src='/Resource/Q24.png'>
+
+Q25 MVVM runs single page application faster, while consuming more memory via data binding
+
+Q26 MVC, as this pattern is the simplest and suitable for a lower scale project.
